@@ -1,0 +1,143 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* set the body background color */
+body{
+  background-color: #0a1d26;
+}
+
+/* main container */
+.main-cont {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card container */
+.weather-card {
+  display: flex;
+  min-width: 24%;
+  min-height: 72%;
+  border-radius: 10px;
+  background: rgb(94, 149, 160);
+  background: linear-gradient(
+    180deg,
+    rgba(38, 122, 139, 0.711) 0%,
+    rgb(90, 168, 183)40%,
+    rgb(61, 106, 115) 100%
+  );
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: rgb(80, 75, 117);
+}
+
+/* the whole search box */
+.search-box{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+/* input field */
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 4px;
+  border: none;
+  outline:none;
+  margin-right: 5px;
+}
+
+/* search button */
+.search-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* search button hover */
+.search-btn:hover {
+  cursor: pointer;
+}
+
+/* set all the font awesome icon color */
+.fa-solid{
+color: #093943;
+}
+
+/* weather images' size */
+.weather-img-cont img {
+  height: 125px;
+  width: 125px;
+}
+
+/* temparature container - name and value and description */
+.city-temp-cont{
+margin-bottom: 35px;
+text-align: center;
+}
+
+/* temp value text */
+.temp-value {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+/* temparature description */
+.temp-info{
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* city name text */
+.city-name {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* humidity and wind speed container */
+.h-ws-cont {
+  display: flex;
+  gap: 30px;
+}
+
+/* humidity section and wind speed section */
+.humidity-cont,
+.wind-s-cont {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  gap: 5px;
+}
+
+/* humidity and wind speed value text */
+.h-value, .ws-value{
+  font-size: 1.5rem;
+}
+
+/* humidity and wind speed name text  */
+.h-text, .ws-text{
+  font-size: 0.8rem;
+}
+
+/* on small devices adds 15px margin to all sides */
+@media screen and (max-width: 557px) {
+  .weather-card {
+    margin: 15px;
+  }
+}

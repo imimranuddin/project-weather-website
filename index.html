@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/Styles/styles.css">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- main container -->
+  <div class="main-cont">
+
+    <!-- card -->
+    <div class="weather-card">
+      <!-- search box -->
+      <div class="search-box">
+        <span class="">
+          <input type="text" placeholder="Kolkata" class="input-box">
+          <button class="search-btn" id="search-button"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+        </span>
+      </div>
+      <!-- weather image -->
+      <div class="weather-img-cont">
+        <img src="./assets/images/cloud.png" alt="" class="weather-img">
+      </div>
+
+      <!-- temparature container -->
+      <div class="city-temp-cont">
+        <h2 class="temp-value"><span class="deg-value">--</span>&deg;C</h2>
+        <p class="temp-info">Description</p>
+        <p class="city-name">Location</p>
+      </div>
+
+      <!-- humidity and wind spped container  -->
+      <div class="h-ws-cont">
+
+        <!-- humidity section -->
+        <div class="humidity-cont">
+          <i class="fa-solid fa-water fa-2x"></i>
+          <div class="h-value-cont">
+            <p class="h-value">--%</p>
+            <p class="h-text">Humidity</p>
+          </div>
+        </div>
+
+        <!-- wind speed section -->
+        <div class="wind-s-cont">
+          <i class="fa-solid fa-wind fa-2x"></i>
+          <div class="ws-value-cont">
+            <p class="ws-value">--Km/h</p>
+            <p class="ws-text">Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="./assets/JS/scripts.js"></script>
+</body>
+
+</html>
